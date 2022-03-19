@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fvigXQoKgEqUsy96+LpLAT5LttfFSoZbcrLPPnH9FqQ=",
+  "Hash": "2Bhg0/hWZJaqVngXzf3lHSMr2avD1nMJ35MFrz5iHec=",
   "Source": "DevCard",
   "BasePath": "_content/DevCard",
   "Mode": "Default",
@@ -510,12 +510,12 @@
       "OriginalItemSpec": "wwwroot/assets/images/clients/profile-6.png"
     },
     {
-      "Identity": "/Users/khandan/RiderProjects/DevCard/DevCard/wwwroot/assets/images/me.jpeg",
+      "Identity": "/Users/khandan/RiderProjects/DevCard/DevCard/wwwroot/assets/images/me.jpg",
       "SourceId": "DevCard",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/khandan/RiderProjects/DevCard/DevCard/wwwroot/",
       "BasePath": "_content/DevCard",
-      "RelativePath": "assets/images/me.jpeg",
+      "RelativePath": "assets/images/me.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -524,7 +524,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/assets/images/me.jpeg"
+      "OriginalItemSpec": "wwwroot/assets/images/me.jpg"
     },
     {
       "Identity": "/Users/khandan/RiderProjects/DevCard/DevCard/wwwroot/assets/images/profile-lg.jpg",
