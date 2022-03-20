@@ -17,10 +17,15 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public JsonResult Contact(Contact form)
+    public IActionResult Contact(Contact form)
     {
-        Console.WriteLine(form.ToString());
-        return Json(Ok());
+        if (!ModelState.IsValid)
+        {
+            ViewBag.error = "لطفا مجدد تلاش نمایید";
+            return View(form);
+        }
+        ViewBag.success = "پیام شما با موفقیت ارسال شد";
+        return View();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

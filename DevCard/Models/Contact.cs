@@ -6,7 +6,7 @@ namespace DevCard.Models;
 public class Contact
 {
     [Required(ErrorMessage = "فیلد اجباری")]
-    [MaxLength(ErrorMessage = "حداکثر نام وارد شده ۱۰۰ کاراکتر می باشد")]
+    [MaxLength(100,ErrorMessage = "حداکثر نام وارد شده ۱۰۰ کاراکتر می باشد")]
     public string Name { get; set; }
     [Required(ErrorMessage = "فیلد اجباری")]
     [EmailAddress(ErrorMessage = "ایمیل وارد شده معتبر نیست")]

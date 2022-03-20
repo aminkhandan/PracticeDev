@@ -69,6 +69,19 @@
 </section>
 <section class="contact-section px-3 py-5 p-md-5">
     <div class="container">
+        @if (!string.IsNullOrWhiteSpace(ViewBag.success))
+        {
+            <div class="alert-success">
+                <p>@ViewBag.success</p>
+            </div> 
+        }
+        @if (!string.IsNullOrWhiteSpace(ViewBag.error))
+                {
+                    <div class=alert-danger>
+                        <p>@ViewBag.error</p>
+                    </div> 
+                }
+        
         <form id="contact-form" class="contact-form col-lg-8 mx-lg-auto" method="post">
             <h3 class="text-center mb-3">در دسترس باشید!</h3>
             <div class="form-row">
@@ -90,13 +103,13 @@
                         <option value="premium">پلاتین</option>
                         <option value="not sure">الماس</option>
                     </select>
-                    
+
                 </div>
                 <div class="form-group col-12">
                     <label class="sr-only" asp-for="Message">پیغام شما</label>
                     <textarea class="form-control" asp-for="Message"
 								placeholder="پیغام خود را وارد نمایید ..." rows="10" aria-required="true"></textarea>
-                    
+
                 </div>
                 <div class="form-group col-12">
                     <button type="submit" class="btn btn-block btn-primary py-2">ارسال</button>
