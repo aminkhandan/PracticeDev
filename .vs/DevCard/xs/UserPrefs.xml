@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{8645E46C-9110-489C-8D64-C8B607FA96EA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DevCard/Views/Home/Contact.cshtml">
+    <Files>
+      <File FileName="DevCard/Views/Home/Contact.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DevCard" expanded="True">
+            <Node name="DevCard" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Contact.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.DevCard PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
