@@ -1,10 +1,11 @@
 ﻿using System.Diagnostics;
+using DevCard.Data;
 using DevCard.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace DevCard.Controllers;
-[Route("/t/t")]
+
 public class HomeController : Controller
     {
         private readonly List<Service> _services = new List<Service>
@@ -14,12 +15,12 @@ public class HomeController : Controller
             new Service(3, "خاکستری"),
             new Service(4, "برنز")
         };
-        [Route("myindex")]
+
         public IActionResult Index()
         {
             return View();
         }
-        [HttpGet("contactpage/{name?}")]
+
         public IActionResult Contact(string name)
         {
             var form = new Contact
@@ -27,6 +28,12 @@ public class HomeController : Controller
                 Services = new SelectList(_services, "Id", "Name")
             };
             return View(form);
+        }
+
+        public IActionResult ProjectDetails(int id)
+        {
+            var project = ProjectStore.GetProjectBy(id);
+            return View(project);
         }
 
         [HttpPost]
