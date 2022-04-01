@@ -19,8 +19,8 @@ public class HomeController : Controller
         {
             return View();
         }
-        [HttpGet("contactpage")]
-        public IActionResult Contact()
+        [HttpGet("contactpage/{name?}")]
+        public IActionResult Contact(string name)
         {
             var form = new Contact
             {
